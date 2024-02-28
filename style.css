@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(181, 181, 181); */
+}
+
+/* ############## HEADER ############## */
+
+h2 {
+    font-size: 48px;
+    padding-bottom: 1%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mot {
+    color: #00353F;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .word-president{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        text-align: justify;
+        font-size: 18px;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+
+.name-president{
+        font-size: 24px;
+        padding-top: 2%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+    }
+
+.mot-car {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(img/FOND-HERO3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    padding: 5%;
+    padding-bottom: 15%;
+}
+
+.car-steven-img-name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-name{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    background-color: #ffffffd3;
+    color: #00353F;
+    /* padding: 0.4em; */
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.6em;
+}
+
+.car-steven{
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.car-amb{
+    font-size: 14px;
+    font-family: 'Krub', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mot-pre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-quote{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: -5%;
+    padding-right: 5%;
+}
+
+.quote{
+    width: 3%;
+    padding-right: 2%;
+}
+
+.quote2{
+    width: 3%;
+    margin-left: 2%;
+}
+
+/* ############## CAROUSEL ############## */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background-color: white;
+    max-width: 400px;
+    width: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1em solid white;
+}
+
+.carousel-items {
+
+    display: flex;
+    animation: carousel 14s linear infinite;
+}
+
+@keyframes carousel {
+    0%, 30%{
+        transform: translate(0px);
+    }
+    40%, 80%
+    {
+        transform: translateX(-400px);
+    }
+    90%, 100%
+    {
+        transform: translate(0px);
+    }
+}
+
+/* ############## MAIN ############## */
+
+
+
+/* ############## FOOTER ############## */
