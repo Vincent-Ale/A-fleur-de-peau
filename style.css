@@ -1,10 +1,135 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
     /* background-color: rgb(181, 181, 181); */
 }
 
 /* ############## HEADER ############## */
+
+/* ######## NAVBAR ######## */
+
+a, a:visited {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
+}
+a:hover {
+    color: #FFBF66;
+    transition: ease-in-out 0.5s;
+}
+.navbar {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+nav{
+    background-color: #00353F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: center;
+    font-size: 1.5rem;
+    height: 50px;
+}
+.logo{
+    width: 12rem;
+    height: 8rem;
+    background-color:white;
+    background-image: url(./Images-AFDP/Logo-AFDP.png) no-repeat;
+    border-radius: 0 0 2rem 2rem;
+    margin-left: 2rem;
+    z-index: 2;
+}
+.logo img {
+    width: 90%;
+    margin: 20% 5% 0 5%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: 1.2rem;
+    height: 20px;
+}
+#icons{
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 700px) {
+    #icons {
+        display: block;
+        align-self: center;
+        margin-right: 1rem;
+        width: 32px;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #FFBF66;
+        border: solid white 2px;
+        border-radius: 18px;
+    }
+    #icons:before {
+        content: "\2630";
+        color: #00353F;
+        text-align: center;
+        align-self: center;
+    }
+    .active #icons:before {
+        content: "\2715";
+        color: #00353F;
+        text-align: center;
+        align-self: center;
+    }
+    nav ul {
+        position: fixed;
+        right: -100%;
+        top: 118px;
+        flex-direction: column;
+        background-color: #00353F;
+        width: 100%;
+        text-align: center;
+        transition: ease-in 0.5s;
+    }
+    nav li {
+        padding: 13px 0;
+        background-color: #0c5766;
+        transition: ease-in 0.5s;
+    }
+    nav li:hover {
+        background-color: #00353F;
+        transition: ease-in-out 0.5s;
+    }
+    nav.active ul {
+        right: 0%;
+        transition: ease-in-out 0.5s;
+    }
+}
+@media (max-width: 590px) {
+    nav{
+        height: 100px;
+    }
+    nav ul {
+        top: 170px;
+    }
+    .logo{
+        height: 7rem;
+    }
+    .logo img{
+        margin: 4% 5% 0 5%;
+    }
+    nav li {
+        padding: 15px 0;
+    }
+}
+/* ######## NAVBAR ######## */
+
 
 h2 {
     font-size: 48px;
@@ -55,8 +180,7 @@ p{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: bottom;
-    padding: 5%;
-    padding-bottom: 15%;
+    padding: 7% 5% 15% 5%;
 }
 
 .car-steven-img-name{
@@ -154,6 +278,78 @@ p{
 
 /* ############## MAIN ############## */
 
+.melanome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffbf66;
+    justify-content: space-between;
+    gap: 6em;
+    padding: 4em 8em 4em 6em;
+    &>div{
+        &>h3{
+            font-size: 48px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #00353F
+        }
+        &>p{
+            font-size: 24px;
+            font-family: 'Krub', sans-serif;
+            font-weight: 600;
+            color: #00353F;
+            text-align: justify;
+            padding-top: 1em;
+        }
+    }
+}
 
+.mela-img{
+    border-radius: 0 50px 0 50px;
+    width: 415px;
+    box-shadow: -16px 16px 0px 0px #d46f4d;
+}
+
+.steven{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    gap: 6em;
+    padding: 3em 0 4em 0;
+    margin: 4em 6em 4em 6em;
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    &>div{
+        &>h3{
+            font-size: 48px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #00353F
+        }
+        &>span{
+            font-size: 32px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            color: #00353F
+        }
+        &>p{
+            font-size: 24px;
+            font-family: 'Krub', sans-serif;
+            font-weight: 600;
+            color: #00353F;
+            text-align: justify;
+            padding-top: 2em;
+        }
+    }
+}
+
+.profil-steven{
+    border-radius: 50px 0 50px 0;
+    width: 415px;
+    margin-right: 1em;
+    box-shadow: 16px 16px 0px 0px #9ac8eb;
+}
 
 /* ############## FOOTER ############## */
