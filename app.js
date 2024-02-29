@@ -53,3 +53,17 @@ function mouseUpAndLeave() {
   cardWrapper.classList.remove('grab')
   clicked = false
 }
+
+window.onload = function() {filterPhotos('all');};
+
+function filterPhotos(tag) {
+    var photos = document.querySelectorAll('.photo');
+    
+    photos.forEach(function(photo) {
+        if (tag === 'all' || photo.classList.contains(tag)) {
+            photo.style.display = 'flex';
+        } else {
+            photo.style.display = 'none'; 
+        }
+    });
+}
