@@ -398,4 +398,67 @@ p{
     background-color: white;
 }
 
+.don{
+    background-color: #FFBF66;
+    border-radius: 0 10rem 10rem 0;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 6em 3em 4em;
+    margin-right: 6em;
+}
+
+.title-text{
+    text-align: justify;
+    &>h4{
+        font-size: 48px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+    &>p{
+        padding: 1em 3em 0 4em;
+        font-size: 24px;
+        font-family: 'Krub', sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+.button-stripe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &>p{
+        font-size: 40px;
+        font-family: 'Krub', sans-serif;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+.stripe-button{
+    border-radius: 1.5rem;
+    border: 0.3em solid white;
+    box-shadow: 3px 3px 10px 3px #0000006e;
+    background-color: #6772E5;
+    /* font-size: 48px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: #6772E5; */
+    transition: ease 0.5s;
+}
+
+.stripe-button:hover{
+    background-color: #353b7b;
+    transition: ease 0.5s;
+}
+
+
+
 /* ############## FOOTER ############## */
