@@ -326,13 +326,13 @@ p{
             font-size: 48px;
             font-family: 'Quicksand', sans-serif;
             font-weight: 700;
-            color: #00353F
+            color: #00353F;
         }
         &>span{
             font-size: 32px;
             font-family: 'Quicksand', sans-serif;
             font-weight: 400;
-            color: #00353F
+            color: #00353F;
         }
         &>p{
             font-size: 24px;
@@ -350,6 +350,52 @@ p{
     width: 415px;
     margin-right: 1em;
     box-shadow: 16px 16px 0px 0px #9ac8eb;
+}
+
+.missions{
+    background-color: #d46f4d;
+    padding: 3em;
+    &>h3{
+        font-size: 48px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        color: white;
+        padding-bottom: 1em;
+        padding-left: 1em;
+    }
+}
+
+.icons-text{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.button-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &>p{
+        font-size: 30px;
+        font-family: 'Krub', sans-serif;
+        font-weight: 600;
+        color: white;
+        padding-top: 1em;
+        line-height: 30%;
+    }
+}
+
+.white-bar{
+    width: 2px;
+    height: 300px;
+    background-color: white;
+}
+
+.icon{
+    border-radius: 10rem;
+    background-color: white;
 }
 
 /* ############## FOOTER ############## */
