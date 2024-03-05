@@ -906,6 +906,7 @@ a img {
         color: white;
         padding-bottom: 0.5em;
         text-wrap: nowrap;
+        text-align: center;
     }
 }
 
