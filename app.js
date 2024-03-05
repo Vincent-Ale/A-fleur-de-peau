@@ -67,3 +67,15 @@ function filterPhotos(tag) {
         }
     });
 }
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+  var hiddenParagraph = document.getElementById('hiddenParagraph');
+
+  if (hiddenParagraph.style.display === 'none') {
+    hiddenParagraph.style.display = 'block';
+    this.innerHTML = '-';
+  } else {
+    hiddenParagraph.style.display = 'none';
+    this.innerHTML = '+';
+  }
+});
