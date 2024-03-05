@@ -13,7 +13,7 @@ a, a:visited {
     text-decoration: none;
     text-transform: uppercase;
     transition: ease-in-out 0.5s;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 
@@ -35,7 +35,7 @@ nav{
     align-items: center;
     line-height: center;
     font-size: 1.5rem;
-    height: 50px;
+    height: 3.125rem;
 }
 .logo{
     width: 12rem;
@@ -44,7 +44,7 @@ nav{
     border-radius: 0 0 2rem 2rem;
     margin-left: 2rem;
     /* border: 0.01em solid #00353F; */
-    box-shadow: 3px 3px 10px 2px #00343f6f;
+    box-shadow: 0.188rem 0.188rem 0.625rem 0.125rem #00343f6f;
     z-index: 2;
 }
 .logo img {
@@ -57,23 +57,23 @@ nav ul{
     justify-content: space-evenly;
     width: 40%;
     font-size: 1.2rem;
-    height: 20px;
+    height: 1.25rem;
 }
 #icons{
     cursor: pointer;
     display: none;
 }
-@media (max-width: 700px) {
+@media (max-width: 1199px) {
     #icons {
         display: block;
         align-self: center;
         margin-right: 1rem;
-        width: 32px;
+        width: 2rem;
         text-align: center;
         font-size: 1.5rem;
         background-color: #FFBF66;
-        border: solid white 2px;
-        border-radius: 18px;
+        border: solid white 0.125rem;
+        border-radius: 1.125rem;
     }
     #icons:before {
         content: "\2630";
@@ -90,7 +90,7 @@ nav ul{
     nav ul {
         position: fixed;
         right: -100%;
-        top: 118px;
+        top: 7.375rem;
         flex-direction: column;
         background-color: #00353F;
         width: 100%;
@@ -98,7 +98,7 @@ nav ul{
         transition: ease-in 0.5s;
     }
     nav li {
-        padding: 13px 0;
+        padding: 0.813rem 0;
         background-color: #0c5766;
         transition: ease-in 0.5s;
     }
@@ -111,12 +111,12 @@ nav ul{
         transition: ease-in-out 0.5s;
     }
 }
-@media (max-width: 590px) {
+@media (max-width: 480px) {
     nav{
-        height: 100px;
+        height: 6.25rem;
     }
     nav ul {
-        top: 170px;
+        top: 10.625rem;
     }
     .logo{
         height: 7rem;
@@ -125,14 +125,14 @@ nav ul{
         margin: 4% 5% 0 5%;
     }
     nav li {
-        padding: 15px 0;
+        padding: 0.938rem 0;
     }
 }
-/* ######## NAVBAR ######## */
+/* ######## NAVBAR FIN ######## */
 
 
 h2 {
-    font-size: 48px;
+    font-size: 3rem;
     padding-bottom: 1%;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
@@ -140,7 +140,7 @@ h2 {
 
 p{
     font-family: 'Krub', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
@@ -159,13 +159,13 @@ p{
         flex-direction: column;
         gap: 2em;
         text-align: justify;
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-right: 5%;
         padding-bottom: 2%;
     }
 
 .name-president{
-        font-size: 24px;
+        font-size: 1.5rem;
         padding-top: 2%;
         font-family: 'Quicksand', sans-serif;
         font-weight: 700;
@@ -198,22 +198,21 @@ p{
     bottom: 0;
     background-color: #ffffffd3;
     color: #00353F;
-    /* padding: 0.4em; */
     width: 100%;
-    padding-top: 0.3em;
-    padding-bottom: 0.6em;
+    padding-top: 0.3rem;
+    padding-bottom: 0.6rem;
 }
 
 .car-steven{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
 
 .car-amb{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Krub', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
@@ -247,10 +246,10 @@ p{
 .carousel {
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 31.25rem;
     background-color: white;
-    max-width: 400px;
-    width: 30%;
+    max-width: 25rem;
+    /* width: 30%; */
     margin: 0 auto;
     overflow: hidden;
     border: 1em solid white;
@@ -273,6 +272,64 @@ p{
     90%, 100%
     {
         transform: translate(0px);
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .mot-car {
+        flex-direction: column-reverse;
+        background-image: url(img/FOND-HERO-MOBILE.png);
+    }
+    .carousel{
+        height: 25rem;
+        max-width: 20rem;
+    }
+    .carousel-items img{
+        height: 25rem;
+        max-width: 20rem;
+    }
+    @keyframes carousel {
+        0%, 30%{
+            transform: translate(0px);
+        }
+        40%, 80%
+        {
+            transform: translateX(-20rem);
+        }
+        90%, 100%
+        {
+            transform: translate(0px);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mot-car {
+        flex-direction: column-reverse;
+        background-image: url(img/FOND-HERO-MOBILE.png);
+    }
+    .carousel{
+        height: 20rem;
+        max-width: 16rem;
+    }
+    .carousel-items img{
+        height: 20rem;
+        max-width: 16rem;
+    }
+    @keyframes carousel {
+        0%, 30%{
+            transform: translate(0px);
+        }
+        40%, 80%
+        {
+            transform: translateX(-16rem);
+        }
+        90%, 100%
+        {
+            transform: translate(0px);
+        }
     }
 }
 
@@ -310,6 +367,16 @@ p{
     border-radius: 0 50px 0 50px;
     width: 415px;
     box-shadow: -16px 16px 0px 0px #d46f4d;
+}
+
+@media (max-width: 1199px){
+    .melanome{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){
+    
 }
 
 /* ######## STEVENSON ######## */
@@ -356,6 +423,16 @@ p{
     box-shadow: 16px 16px 0px 0px #9ac8eb;
 }
 
+@media (max-width: 1199px){
+    .steven{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 480px){
+    
+}
+
 /* ######## SLIDE ######## */
 
 .sun-part{
@@ -392,6 +469,11 @@ p{
     justify-content: center;
     padding: 24px;
 }
+
+.wrapper2{
+    display: none;
+}
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -444,18 +526,88 @@ p{
     scroll-behavior: auto;
 }
 
+@media (max-width: 1199px){
+    .sun-danger{
+        padding-left: 3em;
+        padding-bottom: 1em;
+        &>h3{
+            font-size: 48px;
+            padding-bottom: 0.1em;
+        }
+        &>p{
+            font-size: 32px;
+            padding-bottom: 0.5em;
+        }    
+    }
+    .wrapper {
+        position: relative;
+        max-width: 820px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    .wrapper2{
+        display: none;
+    }
+    .arrow {
+        width: 45px;
+        height: 45px;
+        border-radius: 7rem;
+        font-size: 30px;
+    }
+    .card-wrapper img{
+        max-width: 820px;
+    }
+}
+
+@media (max-width: 480px){
+    .sun-danger{
+        padding-left: 1.5em;
+        padding-bottom: 0.5em;
+        &>h3{
+            font-size: 48px;
+            padding-bottom: 0.1em;
+        }
+        &>p{
+            font-size: 32px;
+            padding-bottom: 0.5em;
+        }    
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper2{
+        position: relative;
+        max-width: 302px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+    }
+}
+
 /* ######## MISSIONS ######## */
 
 .missions{
     background-color: #d46f4d;
-    padding: 3em;
+    padding: 3rem;
     &>h3{
         font-size: 48px;
         font-family: 'Quicksand', sans-serif;
         font-weight: 700;
         color: white;
-        padding-bottom: 1em;
-        padding-left: 1em;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
     }
 }
 
@@ -476,7 +628,7 @@ p{
         font-family: 'Krub', sans-serif;
         font-weight: 600;
         color: white;
-        padding-top: 1em;
+        padding-top: 1rem;
         line-height: 30%;
     }
 }
@@ -497,6 +649,48 @@ p{
     cursor: pointer;
     background-color: #fff2c0;
     transition: ease 0.5s;
+}
+
+@media (max-width: 1199px){
+    .missions{
+        max-width: 1199px;
+    }
+    .button-icon img{
+        width: 180px;
+    }
+    .white-bar{
+        display: none;
+    }
+    .button-icon p{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 480px){
+    .missions{
+        max-width: 480px;
+        padding: 2rem;
+        &>h3{
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    .icons-text{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .button-icon img{
+        width: 90px;
+    }
+    .white-bar{
+        display: none;
+    }
+    .button-icon p{
+        font-size: 16px;
+    }
 }
 
 /* ######## GALERIE ######## */
@@ -559,6 +753,14 @@ a img {
 }
 
 @media (max-width:767px){.gallery{column-count: 1;}}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 480px){
+    
+}
 
 
 /* ######## STRIPE ######## */
@@ -624,6 +826,25 @@ a img {
     transition: ease 0.5s;
 }
 
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 480px){
+    .don{
+        flex-direction: column;
+        padding: 1.5rem 4rem 2rem 2rem;
+    }
+    .title-text{
+        text-align: left;
+        &>h4{
+            padding-bottom: 1rem;
+        }
+        &>p{
+            padding: 0 0 1rem 0;
+        }
+    }
+}
 
 /* ######## HISTOIRE ASSO ######## */
 
@@ -645,6 +866,25 @@ a img {
         font-weight: 500;
         color: black;
         text-align: justify;
+    }
+}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 480px){
+    .asso-history{
+        padding: 10rem 2rem 2rem 2rem;
+        margin-top: -8em;
+        &>h4{
+            font-size: 48px;
+        }
+        &>p{
+            padding: 1rem 0 0 0;
+            font-size: 24px;
+            text-align: left;
+        }
     }
 }
 
@@ -697,7 +937,50 @@ a img {
     width: 100%;
 }
 
+@media (max-width: 1199px){
 
+}
+
+@media (max-width: 480px){
+    .actors{
+        padding: 4em 0;
+        &>h4{
+            font-size: 48px;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+    
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0 2rem 0;
+        gap: 2rem;
+    }
+    
+    .profil-actor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &>h5{
+            font-size: 24px;
+            padding-top: 0.5em;
+        }
+        &>p{
+            font-size: 16px;
+        }
+    }
+    
+    .picture-actor{
+        border: 5px solid white;
+        border-radius: 10rem;
+        width: 60%;
+    }
+}
 
 /* ############## FOOTER ############## */
 
@@ -772,4 +1055,56 @@ footer{
     border: 0.15em solid white;
     border-radius: 0.8rem;
     background-color: white;
+}
+
+@media (max-width: 1199px){
+
+}
+
+@media (max-width: 480px){
+    footer{
+        padding: 2rem;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .logo-footer img{
+        height: 6rem;
+    }
+    
+    .adress{
+        &>h5{
+            font-size: 20px;
+        }
+        &>p{
+            font-size: 16px;
+        }
+    }
+    
+    .legal-notice{
+        text-align: center;
+        &>h5{
+            font-size: 20px;
+        }
+        &>p{
+            font-size: 16px;
+        }
+    }
+    
+    
+    .social-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        padding: 0;
+    }
 }
